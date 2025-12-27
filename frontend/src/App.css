@@ -103,7 +103,7 @@ body {
 ===================================================== */
 .upload-container {
   margin-top: 100px; /* Offset for fixed header */
-  padding: 20px;
+  padding: 20px;;
 }
 
 .upload-card {
@@ -576,97 +576,3 @@ body {
   font-weight: 600;
 }
 
-/* ===============================
-   MOBILE RESPONSIVE FIXES
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Header compact */
-  .app-header {
-    padding: 12px 14px;
-  }
-
-  .app-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .app-logo {
-    height: 40px;
-  }
-
-  /* Upload / cards spacing */
-  .upload-card {
-    padding: 1.2rem;
-  }
-
-  /* Tabs wrap properly */
-  .results-tabs {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .results-tabs .tab {
-    flex: 1;
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 8px;
-  }
-
-  /* Result content readability */
-  .result-pre {
-    font-size: 0.9rem;
-    max-height: 55vh;
-  }
-
-  /* Action buttons stack */
-  .result-controls {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .result-controls .btn {
-    width: 100%;
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .chat-panel {
-    width: 100vw;        /* Full width on phone */
-    right: -100vw;       /* Hide completely */
-  }
-
-  .chat-panel.open {
-    right: 0;            /* Slide fully in */
-  }
-
-  .chat-header {
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .chat-messages {
-    padding: 10px;
-    font-size: 0.95rem;
-  }
-
-  .chat-input-box {
-    padding: 10px;
-  }
-
-  .chat-input-box input {
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .chat-input-box button {
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  /* Footer spacing */
-  footer,
-  .app-footer {
-    font-size: 0.85rem;
-    padding: 10px;
-  }
-}
