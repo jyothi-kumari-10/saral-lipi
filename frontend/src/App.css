@@ -283,6 +283,11 @@ body {
   gap: 10px;
 }
 
+.file-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0.6rem;
+}
 .tab {
   padding: 8px 12px;
   border-radius: 6px;
@@ -310,13 +315,19 @@ body {
   width: 100%;
   box-sizing: border-box;
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  //margin-bottom: 0.5rem;
   font-size: 1.05rem;
+}
+
+.result-card h3 {
+  color: #000;
+  margin: 0 0 0.7rem 0;
 }
 
 .result-pre {
   white-space: pre-wrap;
   word-break: break-word;
+  min-height: 100px;
   max-height: 45vh;
   overflow: auto;
   padding: 12px;
@@ -633,7 +644,7 @@ body {
   .result-controls {
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .result-controls .btn {
@@ -687,5 +698,47 @@ body {
     position: static;
     margin-top: 20px;
   }
+
+   .upload-container {
+    margin-top: 60px; /* mobile header height */
+    padding: 10px;
+  }
+  body {
+    font-size: 14px;
+  }
+  /* Buttons – mobile only */
+.btn {
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.results-actions .btn {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+.app-footer {
+    padding: 6px 10px;
+  }
+
+  .footer-content {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+
+  .footer-title {
+    font-size: 0.8rem;
+  }
+  .upload-hint, .app-description {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+
+  .App.view-options {
+    width: 100%;
+    max-width: 100%;
+    //padding: 0 8px; /* optional breathing room */
+  }
+
 }
 

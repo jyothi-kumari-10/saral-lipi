@@ -314,15 +314,31 @@ const handleFileChange = (event) => {
           {/* Tabs – LEFT */}
 
             <div className="results-tabs">
-              <button className={`tab ${activeResultTab === "raw" ? "active" : ""}`} onClick={() => setActiveResultTab("raw")}>
+              {/* Original tab – always */}
+              <button
+                className={`tab ${activeResultTab === "raw" ? "active" : ""}`}
+                onClick={() => setActiveResultTab("raw")}
+              >
                 {t("original")}
               </button>
-              <button className={`tab ${activeResultTab === "simplified" ? "active" : ""}`} onClick={() => setActiveResultTab("simplified")}>
+
+              {/* Simplified tab – always */}
+              <button
+                className={`tab ${activeResultTab === "simplified" ? "active" : ""}`}
+                onClick={() => setActiveResultTab("simplified")}
+              >
                 {t("simplified")}
               </button>
-              <button className={`tab ${activeResultTab === "translated" ? "active" : ""}`} onClick={() => setActiveResultTab("translated")}>
-                {t("translated")}
-              </button>
+
+              {/* Translated tab – ONLY if translate mode */}
+              {processingMode === "translate" && (
+                <button
+                  className={`tab ${activeResultTab === "translated" ? "active" : ""}`}
+                  onClick={() => setActiveResultTab("translated")}
+                >
+                  {t("translated")}
+                </button>
+              )}
             </div>
 
           {/* Actions – RIGHT */}
