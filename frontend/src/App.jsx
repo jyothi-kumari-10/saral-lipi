@@ -446,7 +446,7 @@ ${active.translatedText || ""}
 };
 
   return (
-    <div className={`App view-${view}`}>
+    <div className={`App view-${view} ${view === "results" ? "has-results" : ""}`}>
       <input
         type="file"
         name="documents"
