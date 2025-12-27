@@ -593,20 +593,7 @@ body {
   .app-logo {
     height: 40px;
   }
-
-  body {
-    height: auto;
-    overflow-y: auto;
-  }
-
-  .App {
-    min-height: auto;
-  }
-
-  .upload-container {
-    margin-top: 90px;  /* header offset */
-    padding-bottom: 20px;
-  }
+  
 
   /* Upload / cards spacing */
   .upload-card {
