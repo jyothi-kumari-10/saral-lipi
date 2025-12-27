@@ -123,7 +123,7 @@ const handleFileChange = (event) => {
     }
 
     try {
-      const resp = await axios.post("http://saral-lipi.onrender.com/api/process", formData, {
+      const resp = await axios.post("https://saral-lipi.onrender.com/api/process", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         timeout: 120000,
       });
@@ -155,7 +155,7 @@ const handleFileChange = (event) => {
   setChatLoading(true);
 
   try {
-    const resp = await axios.post("http://saral-lipi.onrender.com/api/ask", {
+    const resp = await axios.post("https://saral-lipi.onrender.com/api/ask", {
       question: userMsg,
       contextText: context,
     });
