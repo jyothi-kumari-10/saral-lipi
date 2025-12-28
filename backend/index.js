@@ -118,6 +118,7 @@ FORMAT REQUIREMENT (MANDATORY):
 - All section titles MUST be bold.
 - Bullet points must use hyphens (-).
 - Do NOT write paragraphs longer than 2 lines.
+- Always start with a "What This Document Is" section.
 OUTPUT FORMAT (FOLLOW EXACTLY):
 
 **What This Document Is**
@@ -172,7 +173,7 @@ ${extractedText}
       // --------- 3) TRANSLATE ----------
       if (processingMode === "translate" && simplifiedText.trim()) {
         const translationPrompt = `
-Translate the following simplified text to **${outputLanguage}**:
+Translate the following simplified text without adding any extra line in the beginning to **${outputLanguage}**:
 
 ${simplifiedText}
         `;
