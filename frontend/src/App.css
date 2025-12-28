@@ -733,5 +733,17 @@ body {
     //padding: 0 8px; /* optional breathing room */
   }
 
+ 
+  .markdown-body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .result-pre {
+    font-size: 0.88rem;
+    padding: 8px;
+  }
+
+
 }
 
