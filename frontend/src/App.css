@@ -283,7 +283,8 @@ body {
 .results-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.5rem;
+  justify-content: flex-end;
 }
 
 .file-selector {
@@ -693,7 +694,7 @@ body {
   }
 
    .upload-container {
-    margin-top: 60px; /* mobile header height */
+    margin-top: 30px; /* mobile header height */
     padding: 10px;
   }
   body {
