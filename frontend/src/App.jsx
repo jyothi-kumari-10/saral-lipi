@@ -279,7 +279,6 @@ const handleFileChange = (event) => {
               onChange={(e) => setOutputLanguage(e.target.value)}
             >
               <option value="hindi">Hindi</option>
-              <option value="bhojpuri">Bhojpuri</option>
               <option value="kannada">Kannada</option>
               <option value="tamil">Tamil</option>
               <option value="telugu">Telugu</option>
