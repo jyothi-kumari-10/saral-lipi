@@ -600,6 +600,11 @@ body {
    =============================== */
 @media (max-width: 768px) {
 
+  body {
+    display: block;          /* 🔥 stop flex on mobile */
+    min-height: auto;        /* 🔥 remove vh trap */
+  }
+}
   /* Header compact */
   .app-header {
     padding: 12px 14px;
@@ -640,6 +645,13 @@ body {
     margin-top: 8px;
     padding-top: 10px;
   }
+@media (max-width: 768px) {
+  .content-wrapper,
+  .results-section,
+  .result-card {
+    overflow: hidden;
+  }
+}
 
   /* Result content readability */
   .result-pre {
@@ -648,6 +660,7 @@ body {
     font-size: 0.88rem;
     width: 100%;
     max-width: 100%;
+    -webkit-overflow-scrolling: touch; /* iOS + Android */
 
   }
 
