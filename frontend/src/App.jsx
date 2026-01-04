@@ -220,7 +220,7 @@ const handleFileChange = (event) => {
 
 {uploadErrorType === "tooManyFiles" && (
   <div className="upload-error">
-    {t("errorTooManyFiles")}
+    {t("errorTooManyFiles", { count: MAX_FILES })}
   </div>
 )}
 
