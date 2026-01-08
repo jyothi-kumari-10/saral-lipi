@@ -42,7 +42,9 @@ const resources = {
       chatTitle: "Chat with this document",
       chatPlaceholder: "Ask anything about this document...",
       send: "Send",
-      thinking: "Thinking…"
+      thinking: "Thinking…",
+      "addAnotherPhoto": "Add another photo"
+
     }
   },
   hi: {
@@ -82,7 +84,8 @@ const resources = {
       chatTitle: "इस दस्तावेज़ से चैट करें",
       chatPlaceholder: "इस दस्तावेज़ के बारे में कुछ भी पूछें...",
       send: "भेजें",
-      thinking: "सोच रहा है…"
+      thinking: "सोच रहा है…",
+      "addAnotherPhoto": "एक और फोटो जोड़ें"
     }
   },
   kn: {
@@ -123,7 +126,8 @@ const resources = {
       chatTitle: "ಈ ದಸ್ತಾವೇಜಿನೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ",
       chatPlaceholder: "ಈ ದಸ್ತಾವೇಜಿನ ಬಗ್ಗೆ ಏನಾದರೂ ಕೇಳಿ...",
       send: "ಕಳುಹಿಸಿ",
-      thinking: "ಯೋಚಿಸುತ್ತಿದೆ…"
+      thinking: "ಯೋಚಿಸುತ್ತಿದೆ…",
+      "addAnotherPhoto": "ಇನ್ನೊಂದು ಫೋಟೋ ಸೇರಿಸಿ"
 
     }
   },
@@ -165,6 +169,7 @@ const resources = {
       chatPlaceholder: "ఈ పత్రం గురించి ఏదైనా అడగండి...",
       send: "పంపండి",
       thinking: "ఆలోచిస్తోంది…",
+      "addAnotherPhoto": "మరొక ఫోటో జోడించండి"
     }
   }
 };

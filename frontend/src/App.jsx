@@ -81,6 +81,31 @@ const handleFileChange = (event) => {
   }
 };
 
+const handleCameraCapture = (event) => {
+  const file = event.target.files?.[0];
+  if (!file) return;
+
+  // Size validation
+  if (file.size > MAX_FILE_SIZE_BYTES) {
+    setUploadErrorType("fileTooLarge");
+    return;
+  }
+
+  setSelectedFiles((prev) => {
+    if (prev.length >= MAX_FILES) {
+      setUploadErrorType("tooManyFiles");
+      return prev;
+    }
+    return [...prev, file];
+  });
+
+  setUploadErrorType("");
+  setView("options");
+
+  // Reset input so camera can open again
+  event.target.value = "";
+};
+
   const handleChangeFile = () => {
     setSelectedFiles([]);
     setResults([]);
@@ -200,7 +225,9 @@ const handleFileChange = (event) => {
             {t("uploadButton")}
           </button>
           <button className="btn btn-secondary" onClick={() => cameraInputRef.current.click()}>
-            {t("cameraButton")}
+             {selectedFiles.length === 0
+              ? t("cameraButton")
+              : t("addAnotherPhoto")}
           </button>
         </div>
         <div className="upload-hint">
@@ -476,9 +503,9 @@ ${active.translatedText || ""}
         type="file"
         accept="image/*"
         ref={cameraInputRef}
-        onChange={handleFileChange}
+        onChange={handleCameraCapture}
         style={{ display: "none" }}
-        capture
+        capture="environment "
       />
 
       <header className="app-header">

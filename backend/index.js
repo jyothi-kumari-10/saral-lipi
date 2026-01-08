@@ -1,5 +1,4 @@
 // backend/index.js
-// Fully patched Saral Lipi backend (multi-image ready)
 
 const express = require('express');
 const multer = require('multer');
@@ -215,7 +214,7 @@ ${simplifiedText}
 
 
 // ===============================
-//     ASK ENDPOINT (unchanged)
+//     ASK ENDPOINT
 // ===============================
 const referencedFileUrl = 'file:///mnt/data/models.json';
 
@@ -226,7 +225,6 @@ app.post('/api/ask', express.json(), async (req, res) => {
   try {
     const { question, contextText = "" } = req.body;
 
-    // 1️⃣ Handle greetings FIRST (no document needed)
     if (question && greetingRegex.test(question.trim())) {
       return res.json({
         answer: "Hello! 😊 You can ask me anything about this document."
